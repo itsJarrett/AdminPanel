@@ -99,26 +99,36 @@ include 'header/header.php';
 		  <p class="page-header">Player menu of the panel, allows you to change players database values.</p>
           <div id="alert-area"></div>
 
-		  <div class="btn-group" role="group" aria-label="...">
-			<FORM METHOD="LINK" ACTION="rCon/player.php">
-			<INPUT class='btn btn-primary btn-outline' TYPE="submit" VALUE="Ban Player">
-			</FORM>
-		  </div>
-		  <div class="btn-group" role="group" aria-label="...">
-			<FORM METHOD="LINK" ACTION="rCon/unBan.php">
-			<INPUT class='btn btn-primary btn-outline' TYPE="submit" VALUE="Unban Player">
-			</FORM>
-		  </div>
-		  <div class="btn-group" role="group" aria-label="...">
-			<FORM METHOD="LINK" ACTION="rCon/Kmenu.php">
-			<INPUT class='btn btn-primary btn-outline' TYPE="submit" VALUE="Kick Player">
-			</FORM>
-		  </div>
-		  <div class="btn-group" role="group" aria-label="...">
-			<FORM METHOD="LINK" ACTION="notes.php" STYLE = "display: inline;">
-			<INPUT class='btn btn-primary btn-outline' TYPE="submit" VALUE="Notes Menu">
-			</FORM>
-		  </div>
+            <?php
+
+            switch ($staffPerms) {
+                case $staffPerms['ban'] == '1':
+                    echo "<div class=\"btn-group\" role=\"group\" aria-label=\"...\">
+			              <FORM METHOD=\"LINK\" ACTION=\"rCon/player.php\">
+			              <INPUT class='btn btn-primary btn-outline' TYPE=\"submit\" VALUE=\"Ban Player\">
+		        	      </FORM>
+		                  </div>";
+                case $staffPerms['unban'] == '1':
+                    echo "<div class=\"btn-group\" role=\"group\" aria-label=\"...\">
+			              <FORM METHOD=\"LINK\" ACTION=\"rCon/unBan.php\">
+			              <INPUT class='btn btn-primary btn-outline' TYPE=\"submit\" VALUE=\"Unban Player\">
+			              </FORM>
+		                  </div>";
+                case $staffPerms['kick'] == '1':
+                    echo "<div class=\"btn-group\" role=\"group\" aria-label=\"...\">
+			              <FORM METHOD=\"LINK\" ACTION=\"rCon/Kmenu.php\">
+			              <INPUT class='btn btn-primary btn-outline' TYPE=\"submit\" VALUE=\"Kick Player\">
+			              </FORM>
+		                  </div>";
+                case $staffPerms['notes'] == '1':
+                    echo "<div class=\"btn-group\" role=\"group\" aria-label=\"...\">
+			              <FORM METHOD=\"LINK\" ACTION=\"notes.php\" STYLE = \"display: inline;\">
+			              <INPUT class='btn btn-primary btn-outline' TYPE=\"submit\" VALUE=\"Notes Menu\">
+			              </FORM>
+		                  </div>";
+            }
+
+            ?>
 
 <form action = "players.php" method="post">
 		  <div class ="searchBar">
