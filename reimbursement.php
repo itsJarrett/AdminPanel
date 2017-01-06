@@ -73,8 +73,8 @@ $search_result = mysqli_query($dbcon, $sqlget) or die('Connection could not be e
             <table class="table table-striped" style = "margin-top: -10px">
               <thead>
                 <tr>
-					<th>Reimbursement Id</th>
-					<th>PlayerID</th>
+					<th>Reimbursement ID</th>
+					<th>Player ID</th>
 					<th>Amount Given</th>
 					<th>Reason</th>
 					<th>Admin</th>

@@ -283,6 +283,20 @@ AUTO_INCREMENT=1;
 ';
         $sqlMakeAccess = mysqli_query($dbconnect, $sqlmake6) or die('Connection could not be established - Access!');
 
+        $sqlmake7 = '
+        CREATE TABLE `donations` (
+        `donation_id` int(11) NOT NULL AUTO_INCREMENT,
+        `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        `email` varchar(64) DEFAULT NULL,
+        `uid` varchar(64) DEFAULT NULL,
+        `active` int(1) NOT NULL DEFAULT 1,
+	    PRIMARY KEY (`donation_id`),
+	    UNIQUE INDEX `donation_id` (`donation_id`)
+        ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+';
+        $sqlMakeDonation = mysqli_query($dbconnect, $sqlmake7) or die('Connection could not be established - Access!');
+
+
         $sqldeluser = "DELETE FROM users WHERE username='AdminPanel';";
 
         $sqldatadel = mysqli_query($dbconnect, $sqldeluser) or die('Connection could not be established - USER!');
