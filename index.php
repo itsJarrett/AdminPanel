@@ -60,7 +60,7 @@ function checkTime(i) {
         <div class ="logo"><a>Admin<span>Panel</span></a></div>
 		<div class ="logoE"><a>By Jarrett</a></div>
 	</div>
-<center><div id="txt"></div></center>
+<center><div id="txt" style="color: #676c70;"></div></center>
 <script>startTime();</script>
 <div id = "login">
 <form action="login.php" method="post">
