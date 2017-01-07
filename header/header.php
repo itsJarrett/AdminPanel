@@ -25,7 +25,7 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
     	<div class="navbar-header">
     	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarside" aria-expanded="false" aria-controls="navbarside">
@@ -35,7 +35,7 @@
     		<span class="icon-bar"></span>
     	  </button>
 
-              <div class="navbar-brand"><a href="#">Admin<span>Panel</span></a></div>
+              <div class="navbar-brand"><a>Abeloth<span>Panel</span></a></div>
 
     	</div>
     	<div id="navbar" class="navbar-collapse collapse">

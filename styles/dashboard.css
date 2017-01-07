@@ -50,7 +50,7 @@
 .shoutbox-comment-reply {
     display: inline-block;
     float: left;
-    color:  #5896cb;
+    color:  #676c70;
     font-size: 12px;
     font-weight: bold;
     line-height: 20px;
@@ -159,7 +159,7 @@ h2 span {
 }
 
 .shoutbox-form form input[type=submit] {
-    background-color: #87bfef;
+    background-color: #676c70;
     border: 1px solid #e6e7e8;
     box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.1);
     width: 110px;
@@ -348,7 +348,8 @@ body {
  * Hide default border to remove 1px line.
  */
 .navbar-fixed-top {
-  background-color: #428bca;
+    background-color: #676c70;
+    color: #676c70;
 }
 
 .navbar-brand {
@@ -451,7 +452,7 @@ color: white;
 }
 
 .btn-primary.btn-outline {
-	color: #428bca;
+	color: #676c70;
 }
 /*
  * Placeholder dashboard ideas
