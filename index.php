@@ -53,11 +53,10 @@ function checkTime(i) {
 
 </head>
 <body>
-<iframe frameborder="0" height="0" width="0" src="https://youtube.com/embed/M9wInKlAVCc?autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
 <meta name="viewport" content="width=device-width">
 <div id="background"></div>
 	<div id = "header">
-        <div class ="logo"><a>Admin<span>Panel</span></a></div>
+        <div class ="logo"><a>Abeloth<span>Panel</span></a></div>
 		<div class ="logoE"><a>By Jarrett</a></div>
 	</div>
 <center><div id="txt" style="color: #676c70;"></div></center>
