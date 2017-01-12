@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Admin Panel</title>
+    <title>Abeloth Administration Panel</title>
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="styles/dashboard.css" rel="stylesheet">
